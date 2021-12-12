@@ -1,0 +1,49 @@
+.mainHeader{
+    height : 50px;
+    background-color: #cb202d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 0px 20px;
+}
+
+.logoedit{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: 700;
+    color: #cb202d;
+    text-align: center;
+}
+.header-login{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+.header-create{
+    border : 1px solid white;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px;
+    color: white;
+    margin-left: 10px;
+}
+.rlheading{
+    color :teal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.widthMan{
+    width:100%;
+}
+
+
+.width-adjustment button {
+    width: 100%;
+}

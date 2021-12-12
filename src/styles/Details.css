@@ -1,0 +1,123 @@
+#top{
+    position : relative;
+}
+
+#btn-1{
+    padding : 5px 10px;
+    cursor : pointer;
+    border : 1px solid lightgray;
+    border-radius : 5px;
+    background-color : white;
+    color :gray;
+    font-weight : 500;
+}
+
+#btn-2{
+    padding : 5px 10px;
+    cursor : pointer;
+    border : 1px solid lightgray;
+    border-radius : 5px;
+    background-color : #cb202d;;
+    color : white;
+    font-weight : 500;
+}
+#ButtonContainer{
+    position : absolute;
+bottom : 0;
+right : 0;
+margin : 10px 20px;
+}
+
+#detail-img{
+    width:100%;
+    height:50vh;
+}
+
+#heading{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs{
+    display : flex;
+    flex-direction :column;
+}
+.tabList{
+    display : flex;
+}
+.tabHead{
+    margin: 10px 15px 0px 0px;
+    font-size : 17px;
+    font-weight: 500;
+    color: black;
+}
+.active{
+    border-bottom: 3px solid #cb202d;
+}
+
+.tab-content{
+    border-top: 0.5px solid gray;
+}
+
+.about{
+    font-weight : 600;
+    font-size : 25px;
+    color : #2E4C6D;
+}
+
+.head{
+    font-weight : 500;
+    font-size : 20px;
+    color : #2E4C6D;
+    margin-bottom: 5px;
+}
+.value{
+    color : #2E4C6D;
+    margin-bottom: 5px;
+}
+.menuStructure{
+    
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 7px;
+
+}
+.leftMenu{
+    flex : 3;
+}
+.rightMenu{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position : relative;
+}
+.image-menu{
+    width: 90px;
+    height: 90px;
+}
+.item-total{
+    margin: 14px 0px;
+}
+.order-button{
+    margin-bottom: 14px;
+}
+.addBtn{
+    position: absolute;
+    top : 82%;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+.qtyMan{
+    position: absolute;
+    top: 82%;
+    display : flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #cb202d;;
+    justify-content: space-between;
+}
+

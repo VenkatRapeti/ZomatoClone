@@ -111,9 +111,9 @@ class header extends React.Component {
                     <div className="logoedit"><b>e!</b></div>
                     {isLogin ?
                         <div style={{ display: "flex", alignItems: "center" }}>
-                            {user.profileObj ? <div className="header-login">{`Hi ${user.profileObj.name}`}</div>
+                            {user.profileObj ? <div className="header-login">{user.profileObj.name}</div>
                                 :
-                                <div className="header-login">{`Hi ${user.name}`}</div>
+                                <div className="header-login">{user.name}</div>
                             }
                             <div className="header-create" onClick={this.handleLogout}>Logout</div>
                         </div>

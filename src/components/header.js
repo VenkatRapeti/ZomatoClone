@@ -111,7 +111,7 @@ class header extends React.Component {
                     <div className="logoedit"><b>e!</b></div>
                     {isLogin ?
                         <div style={{ display: "flex", alignItems: "center" }}>
-                            {user.profileObj ? <div className="header-login">{user.profileObj.name}</div>
+                            {user && user.profileObj ? <div className="header-login">{user.profileObj.name}</div>
                                 :
                                 <div className="header-login">{user.name}</div>
                             }

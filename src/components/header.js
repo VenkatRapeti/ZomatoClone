@@ -32,6 +32,7 @@ class header extends React.Component {
             userPassword: undefined,
             userLoginEmail: undefined,
             userLoginPassword: undefined,
+            clientName: undefined,
             isLogin: false,
             user: {},
             userLogin: {}
@@ -44,8 +45,7 @@ class header extends React.Component {
     }
 
     responseGoogle = (response) => {
-        console.log(response)
-        this.setState({ isLogin: true, user: response, loginModalIsOpen: false })
+        this.setState({ isLogin: true, user: response, clientName: response.profileObj.name, loginModalIsOpen: false })
     }
 
     handleFormData = (event, state) => {
@@ -71,7 +71,7 @@ class header extends React.Component {
             data: userData
         })
             .then(res => {
-                this.setState({ user: res.data.user, isLogin: true, registerModalIsOpen: false })
+                this.setState({ user: res.data.user, clientName: res.data.name, isLogin: true, registerModalIsOpen: false })
                 console.log(res.data.user)
                 window.alert("Your Account Successfully Created")
             })
@@ -94,7 +94,7 @@ class header extends React.Component {
             data: loginData
         })
             .then(res => {
-                this.setState({ isLogin: res.data.isAuthenticated, user: res.data.user, loginModalIsOpen: false })
+                this.setState({ isLogin: res.data.isAuthenticated, clientName: res.data.user.name, user: res.data.user, loginModalIsOpen: false })
                 window.alert("Login Successfully Completed")
             })
             .catch(err => {
@@ -104,17 +104,14 @@ class header extends React.Component {
     }
 
     render() {
-        const { loginModalIsOpen, registerModalIsOpen, isLogin, user, userLogin } = this.state;
+        const { loginModalIsOpen, registerModalIsOpen, isLogin, user, userLogin, clientName } = this.state;
         return (
             <div>
                 <div className="mainHeader">
                     <div className="logoedit"><b>e!</b></div>
                     {isLogin ?
                         <div style={{ display: "flex", alignItems: "center" }}>
-                            {user && user.profileObj ? <div className="header-login">{user.profileObj.name}</div>
-                                :
-                                <div className="header-login">{user.name}</div>
-                            }
+                            <div className="header-login">{`Hi ${clientName}`}</div>
                             <div className="header-create" onClick={this.handleLogout}>Logout</div>
                         </div>
                         :

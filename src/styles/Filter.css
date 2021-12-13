@@ -157,13 +157,16 @@
 
 @media only screen and (max-width:600px){
 .mainhead{
-    margin-left: 12%;
+    margin-left: 4%;
     } 
  .cuisines{
      margin: 0px 10px 20px 20px !important;
     }
   .img2{
     margin-left: 20px;
+    }
+   .angle{
+        display: initial;
     }
 }
 

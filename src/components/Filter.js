@@ -347,7 +347,7 @@ class Filter extends React.Component {
                         <div className="col-lg-9 col-md-8 col-sm-12 products">
                             {restaurants.length > 0 ? restaurants.map((item) => {
                                 return <div className="block-1" onClick={() => this.handleRestDetails(item._id)}>
-                                <div style={{display :"flex",justifyContent:"space-between"}}>
+                                <div style={{display :"flex"}}>
                                     <div className="img2">
                                         <img className="img1" src={`./${item.image}`} />
                                     </div>

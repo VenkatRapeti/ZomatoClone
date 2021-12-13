@@ -127,6 +127,12 @@ ul {
     #query{
         width: 80%;
     }
+    .mainhead {
+    margin-left: 12%;
+    }
+    .cuisines {
+    margin: 0 10px 20px 20px;
+    }
     
 }
 

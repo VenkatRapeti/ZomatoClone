@@ -295,22 +295,22 @@ class Details extends React.Component {
                         <h2>{restaurant.name}</h2>
                         <div>
                             <label style={{ fontSize: "15px", fontWeight: "500" }}>Name : </label>
-                            <input class="form-control" style={{ width: '400px' }}
+                            <input class="form-control" style={{ width: '350px' }}
                                 type="text" placeholder="Enter your Name" onChange={(event) => this.handleFormChange(event, 'userFullName')} />
                         </div>
                         <div>
                             <label style={{ fontSize: "15px", fontWeight: "500" }}>Email : </label>
-                            <input class="form-control" style={{ width: '400px' }}
+                            <input class="form-control" style={{ width: '350px' }}
                                 type="text" placeholder="Enter your Email" onChange={(event) => this.handleFormChange(event, 'userEmail')} />
                         </div>
                         <div>
                             <label style={{ fontSize: "15px", fontWeight: "500" }}>Address: </label>
-                            <input class="form-control" style={{ width: '400px' }}
+                            <input class="form-control" style={{ width: '350px' }}
                                 type="text" placeholder="Enter your Address" onChange={(event) => this.handleFormChange(event, 'userAddress')} />
                         </div>
                         <div>
                             <label style={{ fontSize: "15px", fontWeight: "500" }}>Contact Number : </label>
-                            <input class="form-control" style={{ width: '400px' }}
+                            <input class="form-control" style={{ width: '350px' }}
                                 type="tel" placeholder="Enter your Contact Details" onChange={(event) => this.handleFormChange(event, 'userContact')} />
                         </div>
                         <button class="btn btn-success"

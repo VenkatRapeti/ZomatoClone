@@ -71,7 +71,7 @@ class header extends React.Component {
             data: userData
         })
             .then(res => {
-                this.setState({ user: res.data.user, clientName: res.data.name, isLogin: true, registerModalIsOpen: false })
+                this.setState({ user: res.data.user, clientName: res.data.user.name, isLogin: true, registerModalIsOpen: false })
                 console.log(res.data.user)
                 window.alert("Your Account Successfully Created")
             })

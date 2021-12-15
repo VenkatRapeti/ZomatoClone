@@ -100,11 +100,12 @@ ul {
 @media only screen and (max-width:600px){
 
     .logo{
-        margin-left: 40%;
+        margin-left: 37%;
     }
     .heading{
         font-size: 28px;
-        line-height: 2.5;
+        line-height: 1.4;
+        margin: 25px 0px;
     }
     .position{
         top: 10%;
@@ -126,7 +127,6 @@ ul {
     #query{
         width: 80%;
     }
-    
 }
 
 @media only screen and (min-width: 600px) and (max-width: 792px){

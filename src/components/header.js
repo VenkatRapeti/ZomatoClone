@@ -131,9 +131,9 @@ class header extends React.Component {
                         <div>
                             <div className="rlheading">Login with email</div>
                             <div>
-                                <input style={{ margin: "10px 0px" }} className="form-control" type="text"
+                                <input style={{ margin: "10px 0px" }} className="form-control" type="email"
                                     placeholder="Enter your email" onChange={(e) => this.setState({ userLoginEmail: e.target.value })} />
-                                <input style={{ margin: "10px 0px" }} className="form-control" type="text"
+                                <input style={{ margin: "10px 0px" }} className="form-control" type="password"
                                     placeholder="Enter your password" onChange={(e) => this.setState({ userLoginPassword: e.target.value })} />
                                 <button class="widthMan btn btn-success"
                                     style={{ margin: '10px 0px' }}
@@ -174,12 +174,12 @@ class header extends React.Component {
                         </div>
                         <div>
                             <label style={{ fontSize: "15px", fontWeight: "500" }}>Email : </label>
-                            <input className="form-control" type="text"
+                            <input className="form-control" type="email"
                                 placeholder="Enter your email address" onChange={(event) => this.handleFormData(event, "userEmail")} />
                         </div>
                         <div>
                             <label style={{ fontSize: "15px", fontWeight: "500" }}>Password : </label>
-                            <input className="form-control" type="text"
+                            <input className="form-control" type="password"
                                 placeholder="Enter your password" onChange={(event) => this.handleFormData(event, "userPassword")} />
                         </div>
                         <div className='width-adjustment'>
